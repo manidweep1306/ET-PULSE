@@ -37,6 +37,37 @@ Rather than performing a basic, literal dictionary translation, the **Vernacular
 
 ---
 
+## ⚙️ Setup Instructions
+
+To run **ET Pulse** locally for evaluation:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/manidweep1306/ET-PULSE.git
+   cd ET-PULSE/frontend
+   ```
+
+2. **Install Dependencies:**
+   Ensure you have Node.js installed, then run:
+   ```bash
+   npm install
+   ```
+
+3. **Configure Environment Variables:**
+   Create a new file named `.env.local` inside the `frontend/` directory and add your Gemini API Key safely:
+   ```env
+   GEMINI_API_KEY=your_genai_api_key_here
+   ```
+
+4. **Launch the Application:**
+   Start the Next.js development server:
+   ```bash
+   npm run dev
+   ```
+   Navigate to `http://localhost:3000` to interact with the platform safely.
+
+---
+
 ## 🛠 Tech Stack
 - **Frontend Layer:** Built using Next.js (React), powered by beautiful TailwindCSS designs (Glassmorphism, dark-modes, and CSS micro-animations). 
 - **AI Brain:** Hooked directly to `@google/generative-ai` leveraging structured JSON extraction via `gemini-2.5-flash`.
